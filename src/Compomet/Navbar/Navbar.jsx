@@ -123,12 +123,12 @@ export default function Navbar() {
           {token ? (
             <>
               {cartCounter ? (
-                <div className="top-3 z-10 absolute sm:right-[90px]  md:right-[90px] lg:right-[112px] bg-red-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
+                <div className="top-3 z-10 absolute sm:right-[85px]  md:right-[90px] lg:right-[112px] bg-red-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
                   <span className="text-white">{cartCounter}</span>
                 </div>
               ) : null}
               {wishList ? (
-                <div className="top-3 z-10 absolute sm:right-[130px]  md:right-[130px] lg:right-[155px] bg-yellow-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
+                <div className="top-3 z-10 absolute sm:right-[125px]  md:right-[130px] lg:right-[155px] bg-yellow-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
                   <span className="text-white">{wishList}</span>
                 </div>
               ) : null}
