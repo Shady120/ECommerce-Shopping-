@@ -123,12 +123,12 @@ export default function Navbar() {
           {token ? (
             <>
               {cartCounter ? (
-                <div className="top-3 z-10 absolute sm:right-[50px] xsm:right-[90px] md:right-[90px] lg:right-[112px] bg-red-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
+                <div className="top-3 z-10 absolute sm:right-[40px] xsm:right-[85px] md:right-[90px] lg:right-[112px] bg-red-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
                   <span className="text-white">{cartCounter}</span>
                 </div>
               ) : null}
               {wishList ? (
-                <div className="top-3 z-10 absolute sm:right-[90px] xsm:right-[130px] md:right-[130px] lg:right-[155px] bg-yellow-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
+                <div className="top-3 z-10 absolute sm:right-[80px] xsm:right-[130px] md:right-[130px] lg:right-[155px] bg-yellow-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
                   <span className="text-white">{wishList}</span>
                 </div>
               ) : null}
@@ -162,7 +162,7 @@ export default function Navbar() {
                 </Link>
                 <Link to={"/Wishlist"}>
                   <i
-                    className={`dark:text-white text-black  fa-solid fa-heart `}
+                    className={`dark:text-white text-black  fa-solid fa-heart realtive`}
                   ></i>
                 </Link>
                 <Link to={"/cart"}>
