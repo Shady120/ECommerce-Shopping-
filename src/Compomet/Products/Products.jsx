@@ -227,12 +227,12 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
        </svg>
      </div>
    </div>:
-      <div className="min-h-screen bg-white dark:bg-slate-950 text-black dark:text-white grid gap-3 container mx-auto py-20 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+      <div className="min-h-screen bg-white dark:bg-slate-950 text-black dark:text-white grid gap-3 container  mx-auto py-20 xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         {searchResult.map((product) => {
           return (
             <div
               key={product.id}
-              className="w-full relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              className="w-full relative max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
             >
               <Link
                 to={`/ProductDetails/${product.id}/${product.category?.name}`}

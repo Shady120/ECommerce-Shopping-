@@ -19,13 +19,14 @@ const {data , isLoading} = useQuery({
 
 if(isLoading){return  <i className="fas fa-spin fa-spinner w-full text-center dark:text-white"></i>;}
   var settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 7,
     slidesToScroll: 1,
     autoplaySpeed: 1000,
     autoplay: true,
+    arrows: false,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -33,25 +34,29 @@ if(isLoading){return  <i className="fas fa-spin fa-spinner w-full text-center da
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }},
-        {
+          dots: true,
+        },
+      },
+      {
         breakpoint: 800,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }},
-        {
+          dots: true,
+        },
+      },
+      {
         breakpoint: 500,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }}
-]};
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
     <>
     

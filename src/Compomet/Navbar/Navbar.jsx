@@ -32,7 +32,7 @@ export default function Navbar() {
   
   return (
     <nav className="bg-white shadow-md dark:bg-gray-900 fixed left-0 right-0 top-0 z-10 dark:text-white">
-      <div className="flex items-center justify-between mx-auto  p-4">
+      <div className="flex items-center justify-between mx-auto p-4 ">
         {/* Navlinks & Photo header */}
         <div className="flex items-center lg:space-x-8 rtl:space-x-reverse  ">
           <div className="flex items-center gap-3">
@@ -123,12 +123,12 @@ export default function Navbar() {
           {token ? (
             <>
               {cartCounter ? (
-                <div className="top-3 z-10 absolute sm:right-[90px] md:right-[90px] lg:right-[112px] bg-red-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
+                <div className="top-3 z-10 absolute sm:right-[50px] xsm:right-[90px] md:right-[90px] lg:right-[112px] bg-red-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
                   <span className="text-white">{cartCounter}</span>
                 </div>
               ) : null}
               {wishList ? (
-                <div className="top-3 z-10 absolute sm:right-[130px] md:right-[130px] lg:right-[155px] bg-yellow-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
+                <div className="top-3 z-10 absolute sm:right-[90px] xsm:right-[130px] md:right-[130px] lg:right-[155px] bg-yellow-500 flex-col rounded-[50%] w-5 h-5 flex items-center justify-center">
                   <span className="text-white">{wishList}</span>
                 </div>
               ) : null}

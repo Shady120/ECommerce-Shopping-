@@ -45,7 +45,7 @@ let validationSchema = Yup.object().shape(
     name: Yup.string().min(3,"min 3 at least").max(20,"max 10 at least").required("name is required"),
     email:Yup.string().email("Email is invalid").required("Email is required"),
     phone:Yup.string().matches(/^01[1250][0-9]{8}$/,"Phone is inValid , must be a Egyptian Number").required("Number is required"),
-    password:Yup.string().matches(/^(?=.*[!@#$%^&*])[A-Z][A-Za-z0-9@#$%^&*!]{1,15npm}$/,"password must be include letters and numbers").required("password is required"),    
+    password:Yup.string().matches(/^(?=.*[!@#$%^&*])[A-Z][A-Za-z0-9@#$%^&*!]{1,15}$/,"password must be include letters and numbers").required("password is required"),    
     rePassword:Yup.string().oneOf([Yup.ref("password")],"rePassword not Match").required("rePassword is required")
   }
 )

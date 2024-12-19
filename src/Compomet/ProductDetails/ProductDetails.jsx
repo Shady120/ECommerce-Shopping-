@@ -111,12 +111,13 @@ export default function ProductDetails() {
         </NavLink>
       );
     },
-    dots: true,
+    dots:true,
     dotsClass: "slick-dots slick-active",
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows:false
   };
 
  const settingsRelated = {
@@ -126,6 +127,8 @@ export default function ProductDetails() {
    slidesToScroll: 1,
    autoplay: true,
    autoplaySpeed: 5000,
+  arrows:false,
+
    responsive: [
      {
        breakpoint: 1024,
@@ -133,7 +136,6 @@ export default function ProductDetails() {
          slidesToShow: 3,
          slidesToScroll: 1,
          infinite: true,
-         dots: true,
        },
      },
      {
@@ -142,7 +144,6 @@ export default function ProductDetails() {
          slidesToShow: 2,
          slidesToScroll: 1,
          infinite: true,
-         dots: true,
        },
      },
      {
@@ -151,7 +152,6 @@ export default function ProductDetails() {
          slidesToShow: 1,
          slidesToScroll: 1,
          infinite: true,
-         dots: true,
        },
      },
    ],
@@ -292,7 +292,7 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
             ;
           </>
         ) : (
-          <div className="bg-gray-100 dark:bg-gray-800 dark:border-gray-700 ">
+          <div className="bg-gray-100 dark:bg-gray-800 dark:border-gray-700 container mx-auto">
             <div className="container mx-auto px-4 py-8">
               <div className="flex flex-wrap -mx-4">
                 {/* Product Images */}
@@ -428,10 +428,11 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
         </div>
       ) : (
         <>
+        <div className="container mx-auto">
           <h1 className="dark:text-white text-center text-3xl mt-3">Related Product</h1>
-          <Slider {...settingsRelated} className="container mx-auto">
+          <Slider {...settingsRelated} className="container mx-aut">
             {relatedProducts?.map((product, index) => (
-              <div className="grid gap-3 container mx-auto py-6  dark:text-white ">
+              <div className="grid gap-3 container mx-auto py-6  dark:text-white">
                 <>
                   <div
                     key={product.id}
@@ -559,6 +560,7 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
               </div>
             ))}
           </Slider>
+        </div>
         </>
       )}
     </>
