@@ -49,7 +49,7 @@ export default function Navbar() {
               <ul
                 className={`${
                   isMenuOpen
-                    ? " space-x-0 space-y-3 bg-red-500 border-gray-200 dark:bg-gray-900 text-center "
+                    ? " space-x-0 space-y-3 border-gray-200 dark:bg-gray-900 text-center "
                     : `hidden`
                 } lg:flex items-center font-medium text-sm lg:space-x-6  rtl:space-x-reverse  absolute lg:static top-16 left-0 w-full lg:w-auto bg-white lg:bg-transparent p-4 lg:p-0 transition-all duration-500 ease-in-out`}
               >

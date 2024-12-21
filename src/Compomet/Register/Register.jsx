@@ -78,7 +78,7 @@ let validationSchema = Yup.object().shape(
       ) : null}
       <h1 className="text-center text-2xl">Register Now:</h1>
       
-      <form className="container w-1/2 mx-auto " onSubmit={formik.handleSubmit}>
+      <form className="container w-1/3 mx-auto shadow-2xl  border-gray-500 p-3 mt-4 dark:bg-gray-700" onSubmit={formik.handleSubmit}>
         <div className="grid grid-cols-1 mx-auto overflow-hidden">
           {/* Name Field */}
           <div className="relative z-0 w-full mb-5 group">
